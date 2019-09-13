@@ -8,14 +8,13 @@
 
 int main(int argc, char *argv[], char** envp)
 {
+	std::cout << "Sciezka = " << *envp << std::endl;
 
 	int min;
-	if (envp != nullptr)
-		std::cout << "Sciezka = " << *envp << std::endl;
 
 	if (argc == 2)
 	{
-		min = atoi(argv[0]);
+		min = atoi(argv[1]);
 	}
 
 	else
